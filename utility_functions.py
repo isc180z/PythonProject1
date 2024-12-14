@@ -1,3 +1,5 @@
+from random import *
+
 def introduction():
     print("Welcome to the Fort Boyard where you will be stuck for an undefined amount of time.")
     print("Your goal is to complete complex challenges that even the wisest mind can't even begin to comprehend.")
@@ -25,21 +27,46 @@ def compose_equipe():
     for i in range(nbplayers):
         players.append({})
         name = input(f"Player {i+1} What can I call you ?\n")
-        profession = input("And what is your use in today's society\n")
+        players[i]['name'] = name
+        profession = input(f"Great, {name}, what is your use in today's society\n")
+        players[i]['profession'] = profession
         if not definedleader:
-            Leader = input("Will you be your team's leader ? This means a lot of responsibilities, answer with yes or no\n")
-            Leader = Leader.lower()
-            if Leader != "yes" and Leader != "no":
-                print("I really wonder if I should let you in... The challenges didn't event begin and yet you've already failed answering a YES NO QUESTION")
-                Leader = input("Come on, caps don't even matter...\n")
+            if i == nbplayers - 1:
+                definedleader = True
+                print("You're the last one left, you must be the leader then.")
+                players[i]['leader'] = True
+            else:
+                Leader = input("Will you be your team's leader ? This means a lot of responsibilities, answer with yes or no\n")
                 Leader = Leader.lower()
+                if Leader != "yes" and Leader != "no":
+                    print("I really wonder if I should let you in... The challenges didn't event begin and yet you've already failed answering a YES NO QUESTION")
+                    Leader = input("Come on, caps don't even matter...\n")
+                    Leader = Leader.lower()
+                if Leader == "yes" :
+                    definedleader = True
+                    print("Good, you will lead them through these challenges.\n")
+                    players[i]['leader'] = True
+                elif Leader == "no" :
+                    print("Well if you don't wish to, I won't force you.\n")
+                    players[i]['leader'] = False
+        else:
+            players[i]['leader'] = False
+    return players
 
-compose_equipe()
+def challenges_menu():
+    print("1. Mathematics challenge\n"
+          "2. Logic challenge\n"
+          "3. Chance challenge\n"
+          "4. Père Fouras's riddle\n")
+    answer = input("Which challenge would you like to do?\n")
+    if answer == "1":
+        x = randint(1,3)
+    elif answer == "2":
+        x = randint(1)
+    elif answer == "3":
+        x = randint(1,2)
+    elif answer == "4":
+        x = randint(1,)
 
-input("test")
-print("works")
-input("test")
-print("workéseful")
-input("test")
-print("possesed")
-input("test")
+
+def
