@@ -69,4 +69,11 @@ def challenges_menu():
         x = randint(1,)
 
 
-def
+def choose_player(team:list)->dict:
+    for i in range(team):
+        if team[i]['leader']:
+            print(f"{i}, {team[i]['name']}, ({team[i]['profession']}) - Leader")
+        else:
+            print(f"{i}, {team[i]['name']}, ({team[i]['profession']}) - Member")
+    thechosenone = input("Who will pass this test? Tell me the number of your desired player.\n")
+    return team[thechosenone]
