@@ -46,3 +46,15 @@ def math_roulette_challenge():
         print("Correct answer! You win a key")
     else:
         print("You lose !")
+
+
+def solve_linear_equation():
+    a,b=randint(1,10),randint(1,10)
+    print("Solve the following equation:",a,"x +",b)
+    r=f"{-b}/{a}"
+    z=str(int(-b/a))
+    t=input("Enter your answer: ")
+    if t==r or t==z:
+        print("Correct! You win a key")
+    else:
+        print("Incorrect!")
