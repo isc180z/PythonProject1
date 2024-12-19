@@ -1,5 +1,5 @@
 from random import *
-from math import *
+from math_ch import *
 
 def introduction():
     input("Press enter to continue...")
