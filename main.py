@@ -1,2 +1,2 @@
 from math_ch import *
-math_challenge()
+maths_solve_equation()
