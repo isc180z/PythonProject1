@@ -1,10 +1,12 @@
 from random import *
+from math_ch import *
 
 def introduction():
-    print("Welcome to the Fort Boyard where you will be stuck for an undefined amount of time.")
-    print("Your goal is to complete complex challenges that even the wisest mind can't even begin to comprehend.")
-    print("Solving these problems will give you a key, gather three of them and you'll be allowed to meet the Père Fouras.")
-    print("Your spirits will need to be elevated to understand his riddles. But if you unearth all the answers, the door to the treasure room will open")
+    input("Press enter to continue...")
+    input("Welcome to the Fort Boyard where you will be stuck for an undefined amount of time.")
+    input("Your goal is to complete complex challenges that even the wisest mind can't even begin to comprehend.")
+    input("Solving these problems will give you a key, gather three of them and you'll be allowed to meet the Père Fouras.")
+    input("Your spirits will need to be elevated to understand his riddles. But if you unearth all the answers, the door to the treasure room will open")
 
 def compose_equipe():
     nbplayers = int(input("How many players will dare challenge my Forts mysteries?\n"))
@@ -60,7 +62,7 @@ def challenges_menu():
           "4. Père Fouras's riddle\n")
     answer = input("Which challenge would you like to do?\n")
     if answer == "1":
-        x = randint(1,3)
+        math_challenge()
     elif answer == "2":
         x = randint(1)
     elif answer == "3":
