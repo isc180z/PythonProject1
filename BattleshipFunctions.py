@@ -46,21 +46,21 @@ def initialize():
 
     display(grid,"Here's how you placed your ships")
 
-
+    return grid
 
 def turn(player:int, player_shots_grid:list, opponent_grid:list):
     if player == 0:
         print('Where will you shoot ?')
         shot = ask_position()
         while player_shots_grid[shot[0]][shot[1]] == '| x ' or player_shots_grid[shot[0]][shot[1]] == '| . ':
-            shot = (randint(1, 3), randint(1, 3))
+            print("You already shot there, ask somewhere else")
+            shot = ask_position()
         if opponent_grid[shot[0]][shot[1]] == '| B ':
             player_shots_grid[shot[0]][shot[1]] = '| x '
             print('Hit, sunk !!')
         else:
             player_shots_grid[shot[0]][shot[1]] = '| . '
             print('Splash...')
-
 
 
     else:
@@ -76,17 +76,9 @@ def turn(player:int, player_shots_grid:list, opponent_grid:list):
 
 
 
-
-k = {"Paul":["1m66","Ouvrier"]}
-k["Paul"].append("nothing")
-print(k["Paul"])
-
-k["A"] = ["fruit"]
-print(k["A"])
-
 def has_won(player_shots_grid:list)->bool:
     x = 0
-    for i in player_shots_grid:
+    for i in player_shots_grid[1:4]:
         for j in i:
             if j == '| x ':
                 x += 1
@@ -95,4 +87,20 @@ def has_won(player_shots_grid:list)->bool:
     return False
 
 
-#def battle_ship_game():
+def battle_ship_game():
+    botgrid = empty_grid()
+    bot1 = (randint(1,3),randint(1,3))
+    bot2 = bot1
+    while bot2 == bot1:
+        bot2 = (randint(1,3),randint(1,3))
+    botgrid[bot1[0]][bot1[1]] = '| B '
+    botgrid[bot2[0]][bot2[1]] = '| B '
+    playergrid = initialize()
+    turnindex = 1
+    playershots = empty_grid()
+    botshots = empty_grid()
+    grids = [[]]
+
+    while not(has_won(playergrid) or has_won(botgrid)):
+        turn(turnindex, playergrid, botgrid)
+        next_player(turnindex)
