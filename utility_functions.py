@@ -72,7 +72,7 @@ def challenges_menu():
     elif answer == "4":
         x = randint(1,)
 
-
+    
 def choose_player(team:list)->dict:
     for i in range(team):
         if team[i]['leader']:

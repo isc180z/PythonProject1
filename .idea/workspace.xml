@@ -8,10 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdf077ae-b0e6-4caf-8509-d7f6be8bf861" name="Changes" comment="Battle_ship_game:&#10;Finished">
-      <change afterPath="$PROJECT_DIR$/chance_ch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BattleshipFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/battleship.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utility_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,6 +116,8 @@
       <workItem from="1734643270493" duration="2371000" />
       <workItem from="1734678846022" duration="4432000" />
       <workItem from="1734697468167" duration="7125000" />
+      <workItem from="1734777412109" duration="422000" />
+      <workItem from="1734778943601" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="turn">
       <option name="closed" value="true" />
