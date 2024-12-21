@@ -1,5 +1,7 @@
 from random import *
 from math_ch import *
+from chance_ch import *
+from battleship import *
 
 def introduction():
     input("Press enter to continue...")
@@ -64,9 +66,9 @@ def challenges_menu():
     if answer == "1":
         math_challenge()
     elif answer == "2":
-        x = randint(1)
+        chance_challenge()
     elif answer == "3":
-        x = randint(1,2)
+        battle_ship_game()
     elif answer == "4":
         x = randint(1,)
 
