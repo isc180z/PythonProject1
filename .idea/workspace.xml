@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fdf077ae-b0e6-4caf-8509-d7f6be8bf861" name="Changes" comment="Battle_ship_game:&#10;Finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chance_ch.py" beforeDir="false" afterPath="$PROJECT_DIR$/chance_ch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +118,8 @@
       <workItem from="1734697468167" duration="7125000" />
       <workItem from="1734777412109" duration="422000" />
       <workItem from="1734778943601" duration="338000" />
+      <workItem from="1734799679799" duration="2517000" />
+      <workItem from="1734882550914" duration="1038000" />
     </task>
     <task id="LOCAL-00001" summary="turn">
       <option name="closed" value="true" />
