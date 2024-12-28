@@ -1,7 +1,10 @@
-from random import *
+### Valentin
+
+import json
 from math_ch import *
 from chance_ch import *
 from battleship import *
+from final_challenge import *
 
 def introduction():
     input("Press enter to continue...")
@@ -80,4 +83,6 @@ def choose_player(team:list)->dict:
         else:
             print(f"{i}, {team[i]['name']}, ({team[i]['profession']}) - Member")
     thechosenone = input("Who will pass this test? Tell me the number of your desired player.\n")
+    while type(thechosenone) != int or thechosenone < 0 or thechosenone >= len(team):
+        thechosenone = input("You have to input a valid player number.\n")
     return team[thechosenone]
