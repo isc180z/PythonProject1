@@ -7,19 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf077ae-b0e6-4caf-8509-d7f6be8bf861" name="Changes" comment="roll_dice_game:&#10;Finished">
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/final_challenge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2024_15_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_12_2024_15_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/PFRiddles (1).json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/PFRiddles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battleship.py" beforeDir="false" afterPath="$PROJECT_DIR$/battleship.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chance_ch.py" beforeDir="false" afterPath="$PROJECT_DIR$/chance_ch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_ch.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_ch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utility_functions.py" afterDir="false" />
-    </list>
+    <list default="true" id="fdf077ae-b0e6-4caf-8509-d7f6be8bf861" name="Changes" comment="Treasury_room:&#10;Finished" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +130,7 @@
       <workItem from="1734778943601" duration="338000" />
       <workItem from="1734799679799" duration="2517000" />
       <workItem from="1734882550914" duration="1267000" />
-      <workItem from="1735300391880" duration="13339000" />
+      <workItem from="1735300391880" duration="13997000" />
     </task>
     <task id="LOCAL-00001" summary="turn">
       <option name="closed" value="true" />
@@ -184,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735155573275</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Treasury_room:&#10;Finished">
+      <option name="closed" value="true" />
+      <created>1735426401856</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735426401856</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +193,8 @@
     <MESSAGE value="Battle_ship_game:&#10;started" />
     <MESSAGE value="Battle_ship_game:&#10;Finished" />
     <MESSAGE value="roll_dice_game:&#10;Finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="roll_dice_game:&#10;Finished" />
+    <MESSAGE value="Treasury_room:&#10;Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Treasury_room:&#10;Finished" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject1$Battleship.coverage" NAME="Battleship Coverage Results" MODIFIED="1734678479696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
