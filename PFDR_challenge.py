@@ -1,3 +1,6 @@
+### Isaac
+
+
 import json
 import random
 def load_riddles(file):
