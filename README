@@ -1,0 +1,43 @@
+Project : Fort Boyard
+
+Contributors :  Valentin Ha Duong, Isaac El .....
+Description :   This is a copy of the TV show "Fort Boyard" on computer
+Key features :
+Technologies :  Python, random and math, as well as json files to store data
+Installation :
+How to use :    Execute the main.py file and you can play in the terminal, most of the time, press enter to continue
+
+Technical documentation:
+    Algorithm:
+            main : executes everything
+            math_ch : contains the math challenges
+            chance_ch : contains the chance challenges
+            battleship : contains the chosen logic challenge, here, battleship
+            riddles_ch : contains the riddles challenge, using PFRiddles.json
+            final_challenge : contains the final challenge, using TRClues.json
+            utility_functions : contains every functions that couldn't be put in the other python files such as team creation
+
+        1.
+
+
+    Functions:
+
+    Input and error management:
+        Only using while "wrong input format" loops to avoid errors
+
+
+        Known bugs :
+            input errors in utility functions, str instead of int
+
+        Line 174 in TRClues:
+            father is the code-word and the clue
+Logbook:
+
+    27/12/2024:
+    Valentin :  final_challenge started
+                Project documentation started
+                problem on the format of the json file when opening
+                solved by reading the pdf provided, and using json.load()
+
+Testing and Validation:
+    Test strategies:
