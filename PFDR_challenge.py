@@ -7,8 +7,9 @@ def load_riddles(file):
     with open(file,"r") as f:
         rids = json.load(f)
     return rids
+
 def pere_fouras_riddles():
-    rids = load_riddles("PFRiddles.json")
+    rids = load_riddles("Data/PFRiddles.json")
     rid = random.choice(rids)
     while rid["type"] != "Key":
         rid = random.choice(rids)
@@ -21,7 +22,9 @@ def pere_fouras_riddles():
             return True
         attempt -= 1
         if attempt > 0:
-            print("Wrong! You have ", attempt, "attempts left")
+            input("Wrong! You have ", attempt, "attempts left")
         else:
             print("You lost the game, the answer was: ", rid["answer"])
             return False
+
+pere_fouras_riddles()
