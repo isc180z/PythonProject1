@@ -66,16 +66,10 @@ def challenges_menu():
           "3. Chance challenge\n"
           "4. Père Fouras's riddle\n")
     answer = input("Which challenge would you like to do?\n")
-    if answer == "1":
-        math_challenge()
-    elif answer == "2":
-        chance_challenge()
-    elif answer == "3":
-        battle_ship_game()
-    elif answer == "4":
-        x = randint(1,)
+    while answer <= 0 or answer > 4:
+        answer = input("Which challenge would you like to do? (answer 1 to 4)\n")
+    return answer
 
-    
 def choose_player(team:list)->dict:
     for i in range(team):
         if team[i]['leader']:
