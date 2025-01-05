@@ -17,12 +17,12 @@ def game():
     team = compose_equipe()
     keys = 0
     i = 0
-    challenges = [math_challenge, battle_ship_game, chance_challenge(), pere_fouras_riddles]
+    challenges = [math_challenge, battle_ship_game, chance_challenge, pere_fouras_riddles]
     done_challenges = []
     while keys < 3 and i < 3:
 
         while challenges_menu() < len(challenges):
-        challenge_choice = challenges_menu()-1
+            challenge_choice = challenges_menu()-1
         selected_player = choose_player(team)
         print("The game is starting")
         print("Loading...")
