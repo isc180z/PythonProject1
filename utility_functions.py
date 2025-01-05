@@ -69,7 +69,7 @@ def challenges_menu():
           "3. Chance challenge\n"
           "4. Père Fouras's riddle\n")
     answer = input("Which challenge would you like to do?\n")
-    while int(answer) <= 0 or int(answer) > 4:
+    while answer == "" or int(answer) <= 0 or int(answer) > 4:
         answer = input("Which challenge would you like to do? (answer 1 to 4)\n")
     return int(answer)
 

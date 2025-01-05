@@ -4,7 +4,7 @@ from random import *
 
 def shell_game():
     shells = ['A','B','C']
-    input("Welcome to the shells game, I'll give you two tries to find in which shell i hid the key.")
+    input("Welcome to the shells game, I'll give you two tries to find in which shell I hid the key.")
     turn = 1
     while turn <= 2:
         winning_shell = choice(shells)

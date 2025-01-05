@@ -1,9 +1,3 @@
-
-from datetime import time
-
-from math_ch import *
-
-
 from math_ch import *
 from battleship import *
 from chance_ch import *
@@ -19,16 +13,17 @@ def game():
     i = 0
     challenges = [math_challenge, battle_ship_game, chance_challenge, pere_fouras_riddles]
     done_challenges = []
-    while keys < 3 and i < 3:
-
-        while challenges_menu() < len(challenges):
+    while keys < 3 or i < 3:
+        challenge_choice = challenges_menu()-1
+        while challenge_choice in done_challenges:
+            print("You already tried this challenge, choose another one.")
             challenge_choice = challenges_menu()-1
+
         selected_player = choose_player(team)
         print("The game is starting")
         print("Loading...")
-        done_challenges.append(challenges[challenge_choice])
+        done_challenges.append(challenge_choice)
         challenge = challenges[challenge_choice]
-        challenges.pop(challenge)
         res = challenge()
         if res:
             keys += 1
@@ -49,4 +44,5 @@ def game():
             print("You lost the game...")
     else:
         print("You lost the game...")
+
 game()

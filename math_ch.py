@@ -13,8 +13,8 @@ def factorial(n):
 
 def math_challenge_factorial():
     n=random.randint(1,10)
-    factorial(n)
-    z=int(input("Enter your answer: "))
+    k = factorial(n)
+    z=int(input(f"Compute the factorial of {n}: "))
     if z==k:
         print("Correct! You win a key.")
         return True
@@ -31,7 +31,7 @@ def math_roulette_challenge():
     o=random.choice(op)
     print(list)
     if o=="+":
-        print("Compute the somme of the terms of this list")
+        print("Compute the sum of the terms of this list")
         r=0
         for i in range(5):
             r=r+list[i]
@@ -71,7 +71,7 @@ def maths_solve_equation():
         return False
 
 def math_challenge():
-    challenges= [math_challenge_factorial, math_roulette_challenge, solve_linear_equation]
+    challenges= [math_challenge_factorial, math_roulette_challenge, maths_solve_equation]
     challenge= random.choice(challenges)
     print(challenge())
 
