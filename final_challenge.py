@@ -35,4 +35,3 @@ def treasury_room():
                     print("    -", i)
             else:
                 print(f"You lost, the code word was {code_word}")
-treasury_room()

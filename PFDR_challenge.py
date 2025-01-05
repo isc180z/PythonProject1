@@ -26,5 +26,3 @@ def pere_fouras_riddles():
         else:
             print("You lost the game, the answer was: ", rid["answer"])
             return False
-
-pere_fouras_riddles()
