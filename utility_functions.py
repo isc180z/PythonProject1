@@ -15,7 +15,7 @@ def introduction():
 
 def compose_equipe():
     nbplayer = input("How many players will dare challenge my Forts mysteries?\n")
-    while nbplayer == '' :
+    while nbplayer == '':
         nbplayer = input("How many players will dare challenge my Forts mysteries?\n")
     nbplayers = int(nbplayer)
     while nbplayers <= 0 or nbplayers > 3:
